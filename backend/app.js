@@ -1,25 +1,28 @@
-const express = require ("express")
-
+import express from "express"
+import { controlador } from "./controlador.js"
 const app = express()
 
-app.get("/",(request, response)=>{
-    response.send("hello from GET")
+const controlador = (req, res) => {
+    res.status(200).send("hello from GET")
+}
+
+app.get("/posts", controlador);
+
+
+app.post("/posts",(req, res)=>{
+    res.status(200).send("hello from POST")
 })
 
-app.post("/",(request, response)=>{
-    response.send("hello from POST")
+app.patch("/posts",(req, res)=>{
+    res.status(200).send("hello from PATCH")
 })
 
-app.patch("/",(request, response)=>{
-    response.send("hello from PATCH")
+app.put("/posts",(req, res)=>{
+    res.status(200).send("hello from PUT")
 })
 
-app.put("/",(request, response)=>{
-    response.send("hello from PUT")
-})
-
-app.delete("/",(request, response)=>{
-    response.send("hello from DELETE")
+app.delete("/posts",(req, res)=>{
+    res.status(200).send("hello from DELETE")
 })
 
 
