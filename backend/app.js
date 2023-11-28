@@ -1,5 +1,5 @@
 import express from "express"
-import { controlador } from "./controlador.js"
+//import { controlador } from "./controlador.js"
 const app = express()
 
 const controlador = (req, res) => {
