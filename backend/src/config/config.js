@@ -1,11 +1,10 @@
-export const TOKEN_SECRET = "some secret key";
 import dotenv from "dotenv";
 
 dotenv.config();
 
 //puerto
 export const settingDotEnvPort = () => {
-  return { port: process.env.PORT };
+  return { port: process.env.PORT || 4000 };
 };
 //base de datos
 export const settingDotEnvDb = () => {
