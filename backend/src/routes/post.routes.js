@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { authRequired } from "../middlewares, auth.jwt.js";
+import { authRequired } from "../middlewares/auth.jwt.js";
 import {
   getPosts,
   getPost,
-  cratePost,
+  createPost,
   updatePost,
   deletePost,
 } from "../controllers/post.controllers.js";
@@ -14,9 +14,9 @@ router.get("/posts", getPosts);
 
 router.get("/posts/:id", getPost);
 
-router.post("/posts", authRequired, creartePost);
+router.post("/posts", authRequired, createPost);
 
-router.delete("/posts/:id", authRequired, updatePost);
+router.delete("/posts/:id", authRequired, deletePost);
 
 router.put("/posts/:id", authRequired, updatePost);
 

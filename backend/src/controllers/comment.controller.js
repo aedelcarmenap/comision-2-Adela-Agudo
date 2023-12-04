@@ -13,10 +13,10 @@ const checkUserExistence = async (userId, res) => {
 
 export const getComments = async (req, res) => {
     try {
-        const comment = await Comment.find(),
-        res.status(200).json(comments);
+        const comment = await Comment.find();
+        res.status(200).json(comment);
     } catch (error) {
-        res.status(500).json ({error:"Error al obtener los comentarios"};)
+        res.status(500).json ({error:"Error al obtener los comentarios"});
     }
 };
 
@@ -61,7 +61,7 @@ export const createComment = async (req, res) => {
             }
 };
 
-export const deleteCommnet = async (req, res) => {
+export const deleteComment = async (req, res) => {
     const {id} = req.params;
     
     try {

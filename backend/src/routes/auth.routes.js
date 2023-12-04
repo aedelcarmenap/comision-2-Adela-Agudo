@@ -4,8 +4,8 @@ import {
   login,
   logout,
   profile,
-} from "../controllers/auth.controller.js";
-import { authRequired } from "../meddlewares/auth.jwt,js";
+} from "../controllers/auth.controllers.js";
+import { authRequired } from "../middlewares/auth.jwt.js";
 
 const router = Router();
 

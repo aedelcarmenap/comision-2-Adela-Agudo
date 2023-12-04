@@ -2,7 +2,7 @@ import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 import cors from "cors";
-import cookieParser from "cookie-parser";
+//import cookieParser from "cookie-parser";
 import { indexRoutes } from "../src/routes/index.routes.js";
 import authRouter from "../src/routes/auth.routes.js";
 import PostRouter from "./routes/post.routes.js";
