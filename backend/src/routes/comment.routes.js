@@ -18,6 +18,6 @@ router.post("/comments/:postId", authRequired, createComment);
 
 router.delete("/comments/:id", authRequired, deleteComment);
 
-router.put("/comments/:id", authRequiered, updateComment);
+router.put("/comments/:id", authRequired, updateComment);
 
 export default router;
