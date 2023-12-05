@@ -8,6 +8,8 @@ import authRouter from "../src/routes/auth.routes.js";
 import PostRouter from "./routes/post.routes.js";
 import CommentRouter from "./routes/comment.routes.js";
 
+
+
 const app = express();
 
 app.use(express.json());
