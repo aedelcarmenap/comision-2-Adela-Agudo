@@ -1,21 +1,20 @@
-import dotenv from "dotenv";
+import dotenv from "dotenv"; 
 
 dotenv.config();
 
-//puerto
+//puerto 
 export const settingDotEnvPort = () => {
-  return { port: process.env.PORT || 4000 };
+  return { port: process.env.PORT || 4000};
 };
-//base de datos
+//base de datos 
 export const settingDotEnvDb = () => {
   return {
     db: {
-      host: process.env.DB_HOST,
-      localhost: process.env.DB_LOCALHOST,
+      host: process.env.DB_HOST, localhost: process.env.DB_LOCALHOST,
     },
   };
 };
-//palabra secreta del token
+//palabra secreta del token 
 export const settingSecretToken = () => {
   return { secret: process.env.SECRET };
 };
