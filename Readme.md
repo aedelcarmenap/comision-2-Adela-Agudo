@@ -1,14 +1,14 @@
 # **Proyecto Final - Epica**
 
-## **_Comision 2 Adela Agudo - Argentina Programa_**
+# **_Comision 2 Adela Agudo - Argentina Programa_**
 
-### Pasos Previos
+## Pasos Previos
 
 - Tener Node.js instalado en tu maquina.
 
 - Instalar MongoDB y ejecutar servicios mongod y mongocompass.
 
-### Configuración Inicial
+## Configuración Inicial
 
 - Cambia el nombre del archivo .example.env por .env ;
 
@@ -26,7 +26,7 @@ npm run dev
 
 - Abre MongoDB Compass y asegúrate de que eñ servico mongod esté en ejecución.
 
-### Realizar Peticiones con Thunder Client:
+## Realizar Peticiones con Thunder Client:
 
 - Agregar un Comentario a un Post Específico
   POST localhost:4000/api/comments/:postId
